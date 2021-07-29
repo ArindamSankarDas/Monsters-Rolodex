@@ -1,0 +1,47 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  background-color: #95dada;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.Card > h2 {
+  padding: 1rem 0;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1090px) {
+  .Card img {
+    width: 170px;
+    position: relative;
+    left: 10%;
+  }
+}
+
+@media (max-width: 858px) {
+  .Card img {
+    left: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  .Card img{
+    left: 12%;
+  }
+}
+
+@media (max-width: 600px){
+  .Card img{
+    left: 25%;
+  }
+}
